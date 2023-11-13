@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+      {% block content %}
+<div class="container-box-1">
+        <div class="settings-container">
+            <div class="top-line">
+                <h1>Settings: Diana Kobets</h1>
+            </div>
+            <div class="login-field">
+                <h5>Login</h5>
+                <input class="set-input" type="search" placeholder="Enter the login here" aria-label="Search">
+            </div>
+            <div class="login-field">
+                <h5>Email</h5>
+                <input class="set-input" type="email" placeholder="user@email.ru" aria-label="Search">
+            </div>
+            <div class="login-field">
+                <h5>Nickname</h5>
+                <input type="search" placeholder="Nickname001" aria-label="Search">
+            </div>
+            <div class="login-field">
+                <h5>Avatar</h5>
+                <button type="image">Upload the image</button>
+            </div>
+            <button class="sign-button" type="submit">Save</button>
+        </div>
+      {% endblock %}
+    <div class="container-box-1">

@@ -1,0 +1,45 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+   <div class="container-box-1">
+        <div class="q-container">
+            <div class="question-page">
+                    <img src='{% static "img/avatar.jpg" %}'>
+                    <div class="q-info">
+                        <a href=" " class="q-title">{{ question.title }}?</a>
+                        <div class="q-description">{{ question.content }}</div>
+                            <div class="bottom-line">
+                                <div class="like-container">
+                                    <button class="like-button">&#x2764;&#xfe0f;</button>
+                                    <span class="like-count">0</span>
+                                    <div>Tags:  {% for tag in question.tags %}<a href="tags.html">{{ tag }}{% endfor %} </a> </div>
+                                </div>
+                            </div>
+                    </div>
+        </div>
+
+            <div class="answers">
+                <h1>Answers</h1>
+                <div class="answer">
+                    <img src='{% static "img/avatar.jpg" %}'>
+                    <div class="q-info">
+                        <div class="a-description">The area of a square is equal to the product of side a by side a or the square of side a.</div>
+                            <div class="bottom-line">
+                                <div class="like-container">
+                                    <button class="like-button">&#x2764;&#xfe0f;</button>
+                                    <span class="like-count">0</span>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+     </div>
+        <div class="your-answer">
+            <input type="text" placeholder = "write your answer here">
+        </div>
+        <button class="ask-button">Answer</button>
+</div>
+
+{% endblock %}
+       </div>

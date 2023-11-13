@@ -1,0 +1,26 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container-box-1">
+<div class="container-box-login">
+    <div class="fields">
+        <div class="login"><h1>Log in</h1></div>
+            <div class="login-field">
+                <h5>Login</h5>
+                <input class="login-input" type="search" placeholder="Enter the login here" aria-label="Search">
+            </div>
+            <div class="login-field">
+                <h5>Password</h5>
+                    <input type="password" placeholder="Password" aria-label="Search">
+            </div>
+                    <form action="{% url  'index' %}">
+                    <button class="sign-button" type="submit">Sign in</button>
+                    </form>
+                  <a class="tag-text" href="{% url  'registration' %}">Create a new account!</a>
+     </div>
+
+</div>
+{% endblock %}
+</div>

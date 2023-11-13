@@ -164,21 +164,12 @@ a:hover{
 .right-menu a{
     color: #797979;
 }
-.right-menu{
-    display: flex;
-    flex-direction: column;
-}
-.right-menu{
-    display: flex;
-    flex-direction: column;
-}
 .right-menu h1{
     font-size: 30px;
     margin: 0px 50px;
 }   
 .right-menu{
-    display: grid;
-    align-items: end;
+    display: block;
     gap: 5px;
     margin-top: 20px;
     margin-left: 100px;
